@@ -1,2 +1,5 @@
 = Hello World! =
 
+This website will host my notes for school. 
+
+I'm a music student at [[https://www.eou.edu/music/Eastern|Eastern Oregon University]]. 
