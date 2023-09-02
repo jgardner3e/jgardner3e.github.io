@@ -4,13 +4,9 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <meta name="author" content="by Justin Gardner" />
   <title>Justin Gardner</title>
   <style>
     html {
-      line-height: 1.5;
-      font-family: Georgia, serif;
-      font-size: 20px;
       color: #1a1a1a;
       background-color: #fdfdfd;
     }
@@ -29,13 +25,16 @@
     @media (max-width: 600px) {
       body {
         font-size: 0.9em;
-        padding: 1em;
+        padding: 12px;
       }
       h1 {
         font-size: 1.8em;
       }
     }
     @media print {
+      html {
+        background-color: white;
+      }
       body {
         background-color: transparent;
         color: black;
@@ -59,6 +58,10 @@
       color: #1a1a1a;
     }
     img {
+      max-width: 100%;
+    }
+    svg {
+      height; auto;
       max-width: 100%;
     }
     h1, h2, h3, h4, h5, h6 {
@@ -85,9 +88,10 @@
       color: #606060;
     }
     code {
-      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
       font-size: 85%;
       margin: 0;
+      hyphens: manual;
     }
     pre {
       margin: 1em 0;
@@ -152,8 +156,11 @@
     div.columns{display: flex; gap: min(4vw, 1.5em);}
     div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
     ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
       width: 0.8em;
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
@@ -166,21 +173,21 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">Justin Gardner</h1></header>
-<h1 id="Hello World!">Hello World!</h1>
-<p><img src="Eclipse_14.jpg" alt="An image of an eclipse I made in
-Blender"/></p> 
-<p>This website will host my notes for school.</p>
-<p>I'm a music student at <a href="https://www.eou.edu/music/">Eastern
-Oregon University</a>.</p>
+<h1 class="title">Justin Gardner</h1>
+</header>
+<h1 id="hello-world">Hello World!</h1>
+<p>This website will host <a href="my_notes_for_school"
+title="wikilink">my notes for school</a>.</p>
+<p>I’m an MAT candidate at <a href="https://www.eou.edu/mat/">Eastern
+Oregon University</a></p>
+<p>I have a degree in music from <a
+href="https://www.eou.edu/music/">Eastern Oregon University</a>.</p>
 <p>Before moving to La Grande, Oregon to study music at EOU, I studied
 philosophy at <a href="https://www.pdx.edu/philosophy/">Portland State
 University</a>. My website at PSU is <a
 href="https://web.pdx.edu/~jugar/">here</a>.</p>
 <p>My girlfriend makes amazing art. Check it out on her instagram <a
 href="https://www.instagram.com/prizepersimmon/">@prizepersimmon</a>.</p>
-<p>I'm interested in helping people who characterize themselves as being
-bad with technology to get better.</p>
 <p>I created this website with the help of the following things:</p>
 <ul>
 <li><a href="https://github.com">Gihthub</a>
@@ -194,5 +201,7 @@ Pack</a></li>
 </ul></li>
 <li><a href="https://pandoc.org">pandoc</a></li>
 </ul>
+<p>I’ve recently moved away from vimwiki as I find it too
+cumbersome.</p>
 </body>
 </html>
